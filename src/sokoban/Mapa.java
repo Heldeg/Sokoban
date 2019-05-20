@@ -46,4 +46,8 @@ public class Mapa {
         return nuevo;
     }
     
+    public Nodo hacerNodo(int x,int y){
+        Nodo nuevo = new Nodo(x,y);
+        return nuevo;
+    }
 }
