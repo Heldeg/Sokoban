@@ -9,6 +9,11 @@ package sokoban;
  *
  * @author EDDER
  */
+/*
+====================================
+              MAIN
+====================================
+*/
 public class Sokoban {
 
     /**

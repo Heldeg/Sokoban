@@ -16,56 +16,7 @@ Todo lo necesario para crear un grafo
 =====================================
 */
 public class Grafo {
-    public class Nodo {
-        private boolean tieneCaja;
-        private boolean esMeta;
-        private final Nodo [] caminos;
-        private final int [] coordenadas;
-        public Nodo(int x, int y){
-            this.coordenadas = new int[2];
-            this.coordenadas[0] = x;
-            this.coordenadas[1] = y;
-            this.caminos = new Nodo[4];
-        }
-        public Nodo(int x, int y,boolean meta){
-            this.coordenadas = new int[2];
-            this.coordenadas[0] = x;
-            this.coordenadas[1] = y;
-            this.caminos = new Nodo[4];
-            this.esMeta = meta;
-        }
-        /*Caminos
-          0->izq
-          1->der
-          2->arr
-          3->abj
-        */
-
-        public boolean isTieneCaja() {
-            return tieneCaja;
-        }
-
-        public void setTieneCaja(boolean tieneCaja) {
-            this.tieneCaja = tieneCaja;
-        }
-
-        public boolean isEsMeta() {
-            return esMeta;
-        }
-
-        public void setEsMeta(boolean esMeta) {
-            this.esMeta = esMeta;
-        }
-
-        public Nodo[] getCaminos() {
-            return caminos;
-        }
-
-        public int[] getCoordenadas() {
-            return coordenadas;
-        }
-        
-    }
+ 
     Nodo inicio;
 
     public Grafo(int x, int y) {
@@ -88,4 +39,13 @@ public class Grafo {
         ans.setEsMeta(meta);
         return ans;
     }
+
+    public Nodo getInicio() {
+        return inicio;
+    }
+
+    public void setInicio(Nodo inicio) {
+        this.inicio = inicio;
+    }
+    
 }
