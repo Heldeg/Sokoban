@@ -13,7 +13,7 @@ public class Nodo {
      /*
         *tieneCaja   -> booleano que indica si tiene una caja
         *esMeta      -> booleano que indica si es una meta
-        *coordenadas -> arreglo de tamaño 2 que contiene las coordenadas de un nodo
+        *coordenadas -> arreglo de tamaño 2 que contiene las coordenadas de un nodo desde 0
         */
         private boolean tieneCaja;
         private boolean esMeta;

@@ -17,7 +17,7 @@ package sokoban;
 public class Mapa {
     /*
     *cajas   -> arreglo de nodos que tienen una caja
-    *kugador -> posicion del jugador
+    *jugador -> posicion del jugador
     *metas   -> arreglo de nodos que son metas
     *suelo   -> grafo que representa un nivel
     */
@@ -36,6 +36,12 @@ public class Mapa {
         Nodo nuevo;
         nuevo = new Nodo(x, y);
         nuevo.setTieneCaja(true);
+        for (int i = 0; i < this.cajas.length; i++) {
+            if (this.cajas[i]==null) {
+                this.cajas[i]=nuevo;
+                return nuevo;
+            }
+        }
         return nuevo;
     }
     
@@ -43,11 +49,25 @@ public class Mapa {
         Nodo nuevo;
         nuevo = new Nodo(x,y);
         nuevo.setEsMeta(true);
+        for (int i = 0; i < this.metas.length; i++) {
+            if (this.metas[i]==null) {
+                this.metas[i]=nuevo;
+                return nuevo;
+            }
+        }
         return nuevo;
     }
     
     public Nodo hacerNodo(int x,int y){
         Nodo nuevo = new Nodo(x,y);
         return nuevo;
+    }
+    public void cambiarPosCaja(int nodoActual,Nodo destino){
+        this.cajas[nodoActual].setTieneCaja(false);
+        destino.setTieneCaja(true);
+        this.cajas[nodoActual] = destino;   
+    }
+    public void cambiarPosJugador(Nodo destino){
+        this.jugador = destino;
     }
 }
