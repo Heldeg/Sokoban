@@ -34,11 +34,6 @@ public class Grafo {
         Nodo ans= new Nodo(x,y);
         return ans;
     }
-    public Nodo hacerNodo(int x, int y,boolean meta){
-        Nodo ans= new Nodo(x,y);
-        ans.setEsMeta(meta);
-        return ans;
-    }
 
     public Nodo getInicio() {
         return inicio;
