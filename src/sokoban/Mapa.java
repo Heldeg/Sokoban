@@ -23,35 +23,35 @@ public class Mapa {
     **  0 -> suelo
     **  1 -> Meta
     */
-    private short [][] suelo;
+    private byte [][] suelo;
     private final int n;
     private final int m;
     private Scanner scanner;
     private final String estructura;
     public Mapa(String estructura,int n,int m){
-        this.suelo = new short[n][m];
+        this.suelo = new byte[n][m];
         this.m = m;
         this.n = n;
         this.estructura=estructura;
        
     }
-    private short obtenerNumero(int index){
+    private byte obtenerNumero(int index){
         this.scanner = new Scanner(this.estructura);
-        short valor=-2;
+        byte valor=-2;
         String aux;
         char caracter = scanner.nextLine().charAt(index);
         if(caracter=='-'){
             valor=-1;
         }else if(Character.isDigit(caracter)){
             aux= Character.toString(caracter);
-            valor = Short.parseShort(aux);
+            valor = Byte.parseByte(aux);
         }
         return valor;
     }
     
     public void insertarNumeros(){
         int j=0,k=0;
-        short valor;
+        byte valor;
         for (int i = 0; i < this.estructura.length(); i++) {  
             valor = obtenerNumero(i);
             if (valor!=-2) {
