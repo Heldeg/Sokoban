@@ -22,6 +22,8 @@ public class Sokoban {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        HacerMapa mapa = new HacerMapa(15);
+        mapa.mapa.imprimeMatriz();
 
     }
     

@@ -83,6 +83,7 @@ public final class HacerMapa {
                +       "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +       "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa2(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -95,6 +96,7 @@ public final class HacerMapa {
                +        "-1,-1,0 ,0 ,0 ,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa3(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -107,6 +109,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa4(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -119,6 +122,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa5(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -131,6 +135,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
         public void creaMapa6(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -143,6 +148,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa7(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -155,6 +161,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa8(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -167,6 +174,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa9(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -179,6 +187,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa10(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -191,6 +200,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa11(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -203,6 +213,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa12(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -215,6 +226,7 @@ public final class HacerMapa {
                +        "-1,0 ,1 ,0 ,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa13(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -227,6 +239,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,1 ,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa14(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -239,6 +252,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
     public void creaMapa15(){
         String cadena = "-1,-1,-1,-1,-1,-1,-1,-1,-1"
@@ -251,6 +265,7 @@ public final class HacerMapa {
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                +        "-1,-1,-1,-1,-1,-1,-1,-1,-1";
         this.mapa = new Mapa(cadena, 9, 9);
+        this.mapa.insertarNumeros();
     }
 }
     

@@ -72,7 +72,12 @@ public class Mapa {
     public void imprimeMatriz(){
         for (int i = 0; i < this.n; i++) {
             for (int j = 0; j < this.n; j++) {
-                System.out.print(this.suelo[i][j]+" ");
+                if (this.suelo[i][j]==-1) {
+                    System.out.print(this.suelo[i][j]+" ");
+                }else{
+                    System.out.print(this.suelo[i][j]+"  ");
+                }
+                
             }
             System.out.println("");
         }
