@@ -58,6 +58,26 @@ public class Mapa {
         return nuevo;
     }
     
+    public Nodo hacerNodoMetaConCaja(int x,int y){
+        Nodo nuevo;
+        nuevo = new Nodo(x,y);
+        nuevo.setEsMeta(true);
+        nuevo.setTieneCaja(true);
+       for (int i = 0; i < this.cajas.length; i++) {
+            if (this.cajas[i]==null) {
+                this.cajas[i]=nuevo;
+                break;
+            }
+       }
+        for (int i = 0; i < this.metas.length; i++) {
+            if (this.metas[i]==null) {
+                this.metas[i]=nuevo;
+                return nuevo;
+            }
+        }
+        return nuevo;
+    }
+    
     public Nodo hacerNodo(int x,int y){
         Nodo nuevo = new Nodo(x,y);
         return nuevo;
