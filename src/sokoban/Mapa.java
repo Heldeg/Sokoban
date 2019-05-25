@@ -6,8 +6,6 @@
 package sokoban;
 
 import java.util.Scanner;
-import sobras.Nodo;
-import sobras.Grafo;
 
 /**
  *
