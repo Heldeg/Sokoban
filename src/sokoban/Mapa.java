@@ -22,6 +22,10 @@ public class Mapa {
     ** -1 -> pared
     **  0 -> suelo
     **  1 -> Meta
+    **  2 -> caja
+    **  3 -> caja y meta
+    **  4 -> jugador
+    **  5 ->jugador y meta
     */
     private byte [][] suelo;
     private final int n;
@@ -76,8 +80,7 @@ public class Mapa {
                     System.out.print(this.suelo[i][j]+" ");
                 }else{
                     System.out.print(this.suelo[i][j]+"  ");
-                }
-                
+                }              
             }
             System.out.println("");
         }
