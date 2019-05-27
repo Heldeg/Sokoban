@@ -14,69 +14,66 @@ package sokoban;
 Coleccion de mapas. Van a ser los niveles
 =========================================
 */
-public final class HacerMapa {
-    Mapa mapa;
-    int numMapa;
-    public HacerMapa(int numMapa){
-        this.numMapa=numMapa;
+public final class MapMaker {
+    Map map;
+    int numMap;
+    public MapMaker(int numMapa){
+        this.numMap=numMapa;
         switch(numMapa){
             case 1:
-                creaMapa1();
+                createMap1();
             break;
             case 2:
-                creaMapa2();
+                createMap2();
             break;
             case 3:
-                creaMapa3();
+                createMap3();
             break;
             case 4:
-                creaMapa4();
+                createMap4();
             break;
             case 5:
-                creaMapa5();
+                createMap5();
             break;
             case 6:
-                creaMapa6();
+                createMap6();
             break;
             case 7:
-                creaMapa7();
+                createMap7();
             break;
             case 8:
-                creaMapa8();
+                createMap8();
             break;
             case 9:
-                creaMapa9();
+                createMap9();
             break;
             case 10:
-                creaMapa10();
+                createMap10();
             break;
             case 11:
-                creaMapa11();
+                createMap11();
             break;
             case 12:
-                creaMapa12();
+                createMap12();
             break;
             case 13:
-                creaMapa13();
+                createMap13();
             break;
             case 14:
-                creaMapa14();
+                createMap14();
             break;
             case 15:
-                creaMapa15();
+                createMap15();
             break;
             default:
                 System.out.println("Nivel inexistente");
         }
     }
-    public HacerMapa(String cadena,int x,int y){
-        this.mapa = new Mapa(cadena, x, y);
-        this.mapa.insertarNumeros();
+    public MapMaker(String cadena,int x,int y){
+        this.map = new Map(cadena, x, y);
+        this.map.insertNumbers();
     }
-    public void reiniciar(){
-        
-    }
-    public void creaMapa1(){
+    private void createMap1(){
         String cadena= "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +       "1 ,1 ,1 ,3 ,1 ,1 ,1 ,1 ,1 "
                +       "1 ,1 ,1 ,0 ,1 ,1 ,1 ,1 ,1 "
@@ -86,10 +83,10 @@ public final class HacerMapa {
                +       "1 ,1 ,1 ,1 ,3 ,1 ,1 ,1 ,1 "
                +       "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +       "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa2(){
+    private void createMap2(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,0 ,0 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,2 ,5 ,1 ,1 ,1 ,1 ,1 "
@@ -99,10 +96,10 @@ public final class HacerMapa {
                +        "1 ,1 ,0 ,0 ,0 ,1 ,0 ,0 ,1 "
                +        "1 ,1 ,0 ,0 ,0 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa3(){
+    private void createMap3(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,0 ,0 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,5 ,2 ,1 ,1 ,1 ,1 ,1 "
@@ -112,10 +109,10 @@ public final class HacerMapa {
                +        "1 ,3 ,3 ,4 ,3 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa4(){
+    private void createMap4(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,5 ,0 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,0 ,2 ,0 ,0 ,1 ,1 ,1 "
@@ -125,10 +122,10 @@ public final class HacerMapa {
                +        "1 ,3 ,0 ,0 ,0 ,2 ,0 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa5(){
+    private void createMap5(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,0 ,0 ,0 ,0 ,1 ,1 "
                +        "1 ,1 ,1 ,2 ,2 ,2 ,0 ,1 ,1 "
@@ -138,10 +135,10 @@ public final class HacerMapa {
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-        public void creaMapa6(){
+    private void createMap6(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,0 ,0 ,5 ,1 ,1 ,1 "
                +        "1 ,0 ,0 ,2 ,3 ,0 ,1 ,1 ,1 "
@@ -151,10 +148,10 @@ public final class HacerMapa {
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa7(){
+    private void createMap7(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,3 ,3 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,0 ,3 ,1 ,1 ,1 ,1 "
@@ -164,10 +161,10 @@ public final class HacerMapa {
                +        "1 ,0 ,0 ,5 ,0 ,0 ,0 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa8(){
+    private void createMap8(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,0 ,1 ,0 ,0 ,0 ,1 ,1 "
                +        "1 ,0 ,2 ,3 ,3 ,2 ,0 ,1 ,1 "
@@ -177,10 +174,10 @@ public final class HacerMapa {
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa9(){
+    private void createMap9(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "-1,0 ,0 ,0 ,0 ,-1,-1,-1,-1"
                +        "-1,0 ,2 ,2 ,2 ,-1,-1,-1,-1"
@@ -190,10 +187,10 @@ public final class HacerMapa {
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa10(){
+    private void createMap10(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,3 ,3 ,2 ,3 ,3 ,1 ,1 ,1 "
                +        "1 ,3 ,3 ,1 ,3 ,3 ,1 ,1 ,1 "
@@ -203,10 +200,10 @@ public final class HacerMapa {
                +        "1 ,0 ,0 ,1 ,5 ,0 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa11(){
+    private void createMap11(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,0 ,5 ,0 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,0 ,1 ,2 ,0 ,0 ,1 ,1 "
@@ -216,10 +213,10 @@ public final class HacerMapa {
                +        "1 ,1 ,1 ,0 ,0 ,0 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa12(){
+    private void createMap12(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,0 ,0 ,0 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,2 ,0 ,5 ,1 ,1 ,1 ,1 "
@@ -229,10 +226,10 @@ public final class HacerMapa {
                +        "1 ,0 ,4 ,0 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,3 ,0 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa13(){
+    private void createMap13(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,0 ,0 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,2 ,0 ,1 ,1 ,1 ,1 "
@@ -242,10 +239,10 @@ public final class HacerMapa {
                +        "1 ,1 ,1 ,4 ,0 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,3 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa14(){
+    private void createMap14(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,0 ,0 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,0 ,1 ,0 ,1 ,0 ,0 ,0 ,1 "
@@ -255,10 +252,10 @@ public final class HacerMapa {
                +        "1 ,3 ,3 ,0 ,0 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
     }
-    public void creaMapa15(){
+    private void createMap15(){
         String cadena = "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,0 ,0 ,0 ,0 ,1 ,1 ,1 "
                +        "1 ,1 ,3 ,1 ,1 ,2 ,0 ,1 ,1 "
@@ -268,8 +265,11 @@ public final class HacerMapa {
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 "
                +        "1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ";
-        this.mapa = new Mapa(cadena, 9, 9);
-        this.mapa.insertarNumeros();
+        this.map = new Map(cadena, 9, 9);
+        this.map.insertNumbers();
+    }
+    public byte[][] getMapMatrix(){
+        return this.map.getFloor();
     }
 }
     

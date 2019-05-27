@@ -14,27 +14,27 @@ import java.io.*;
         LECTURA ARCHIVOS
 ====================================
 */
-public class Lectura {
-     private File archivo;
+public class Reader {
+     private File file;
      private FileReader fileReder;
      private BufferedReader buffer;
-     private String direcctorio;
-     String estructuraLeida;
-     public Lectura(String directorio){
-         this.estructuraLeida = "";
-         this.direcctorio = directorio;
-         abreYLee();
+     private String directory;
+     String readedStructure;
+     public Reader(String directorio){
+         this.readedStructure = "";
+         this.directory = directorio;
+         openAndRead();
      }
-     private void abreYLee(){
+     private void openAndRead(){
          try{
-             this.archivo = new File(this.direcctorio);
-             this.fileReder = new FileReader(this.archivo);
+             this.file = new File(this.directory);
+             this.fileReder = new FileReader(this.file);
              this.buffer = new BufferedReader(this.fileReder);
              
-             String linea;
-             while((linea=buffer.readLine())!=null){
-                 this.estructuraLeida+=linea;
-                 this.estructuraLeida+=" ";
+             String line;
+             while((line=buffer.readLine())!=null){
+                 this.readedStructure+=line;
+                 this.readedStructure+=" ";
                 // System.out.println(linea);
              }
          }catch(Exception e){
