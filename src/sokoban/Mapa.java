@@ -19,13 +19,13 @@ import java.util.Scanner;
 public class Mapa {
     /*
     *suelo   -> Matriz
-    ** -1 -> pared
     **  0 -> suelo
-    **  1 -> Meta
+    **  1 -> pared
     **  2 -> caja
-    **  3 -> caja y meta
-    **  4 -> jugador
-    **  5 ->jugador y meta
+    **  3 -> meta
+    **  4 -> caja y meta
+    **  5 -> jugador
+    **  6 -> jugador y meta
     */
     private byte [][] suelo;
     private final int n;
@@ -44,9 +44,7 @@ public class Mapa {
         byte valor=-2;
         String aux;
         char caracter = scanner.nextLine().charAt(index);
-        if(caracter=='-'){
-            valor=-1;
-        }else if(Character.isDigit(caracter)){
+        if(Character.isDigit(caracter)){
             aux= Character.toString(caracter);
             valor = Byte.parseByte(aux);
         }
@@ -56,6 +54,7 @@ public class Mapa {
     public void insertarNumeros(){
         int j=0,k=0;
         byte valor;
+        try{
         for (int i = 0; i < this.estructura.length(); i++) {  
             valor = obtenerNumero(i);
             if (valor!=-2) {
@@ -69,6 +68,9 @@ public class Mapa {
                 }
                 k+=1;
             }
+        }
+        }catch(Exception e){
+            System.out.println("Error al ingresar numeros");
         }
     }
     
