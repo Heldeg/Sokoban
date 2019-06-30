@@ -34,7 +34,7 @@ public class Reader {
              String line;
              while((line=buffer.readLine())!=null){
                  this.readedStructure+=line;
-                 this.readedStructure+=" ";
+                 this.readedStructure+="-";
                 // System.out.println(linea);
              }
          }catch(Exception e){
